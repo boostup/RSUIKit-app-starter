@@ -9,6 +9,7 @@ This package is meant as a starter kit for creating react apps for the browser.
 
 #Features
 - Webpack, live coding
+- VSCode: integrated app debugging, [thanks to this page, down at the 'Visual Studio Code' section](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
 - Bootstrap for react
 - Routing (Handling not found routes)
 - Auto selecting nav item of main nav, according to URL/href
