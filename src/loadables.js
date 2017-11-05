@@ -3,7 +3,7 @@
  * Through the use of the "react-loadable" package, webpack knows how to automatically cut the chunks.
  */
 import Loadable from "react-loadable";
-import { DefaultLoadingComponent } from './loading'; 
+import { DefaultLoadingComponent } from './components/Loading'; 
 
 /**
  * https://github.com/thejameskyle/react-loadable#how-do-i-avoid-repetition
