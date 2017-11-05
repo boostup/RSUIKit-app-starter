@@ -15,7 +15,8 @@ This package is meant as a starter kit for creating react apps for the browser.
 - Passing App-level data or functions to routes' child component (useful for passing user session data for example)
 
 #Roadmap
-- [Make components loadable](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html#nextsteps)
+- Make an app level loading indicator for API requests
+- [Make components loadable through ES6 'import' statements using 'react-loadable'](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html#nextsteps), but watch for 'Webpack loaders are not supported by Create React App.' [here](https://github.com/facebookincubator/create-react-app/issues/2477)
 - is ES6 await/async??
 
 #Useful tools
