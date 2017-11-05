@@ -7,6 +7,12 @@ import RouteNavItem from "./components/RouteNavItem";
 
 class App extends Component {
   render() {
+
+    const childProps = {
+      isAuthenticated: true,
+      userHasAuthenticated: ()=>{}
+    };
+
     return (
       <div className="App container">
         <Navbar fluid collapseOnSelect>
@@ -23,7 +29,7 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Routes />
+        <Routes childProps={childProps} />
       </div>
     );
   }
