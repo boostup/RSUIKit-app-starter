@@ -4,6 +4,14 @@ body {
   font-family: sans-serif;
 }
 
+.App {
+  margin-top: 15px;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+}
+
 select.form-control,
 textarea.form-control,
 input.form-control {
