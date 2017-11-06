@@ -1,8 +1,8 @@
 import axios from "axios";
 import { buildURLRequestString } from "./api_utils";
 
-const JSON_PL_ROOT_URL = 'http://localhost:3000/';
-const JSON_PL_API_KEY = ''
+const JSON_PL_ROOT_URL = 'http://192.168.1.16:3000/';
+const JSON_PL_API_KEY = '';
 /**
  * 
  * FETCH LIST OF DUMMY PHOTOS (JSON)
