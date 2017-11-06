@@ -3,10 +3,11 @@ import React from "react";
  * 
  * The Default App-level "is Loading..." Component to be displayed while loading
  */
-export const DefaultLoadingComponent = ({isLoading, error}) => {
+export function defaultLoadingWithProps(props) {  
+  return ({isLoading, error}) => {
     // Handle the loading state
     if (isLoading) {
-      return <div>Loading...</div>;
+      return props.customElement || <div>loading...</div>;
     }
     // Handle the error state
     else if (error) {
@@ -16,3 +17,4 @@ export const DefaultLoadingComponent = ({isLoading, error}) => {
       return null;
     }
   };
+}
