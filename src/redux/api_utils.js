@@ -2,9 +2,10 @@ import queryString from "qs";
 
 export function buildURLRequestString(rootURL, qsData) {
     try {
-        const requestStr = queryString.stringify(qsData.qs);
-        console.log(requestStr);
-        return `${rootURL}${qsData.verb}?${requestStr}`;
+        const qs = queryString.stringify(qsData.qs),
+        requestStr = `${rootURL}${qsData.verb}?${qs}`;
+        //console.log(`buildURLRequestString: ${requestStr}`);
+        return requestStr;
     } catch (error) {
         throw error;
     }
