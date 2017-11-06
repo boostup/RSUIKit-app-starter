@@ -20,14 +20,11 @@ class App extends Component {
             <Navbar.Brand>
               <Link to="/">Starter App</Link>
             </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <RouteNavItem href="/signup">Signup</RouteNavItem>
-              <RouteNavItem href="/login">Login</RouteNavItem>
-            </Nav>
-          </Navbar.Collapse>
+            </Navbar.Header>
+              <Nav pullRight>
+                <RouteNavItem href="/signup">Signup</RouteNavItem>
+                <RouteNavItem href="/login">Login</RouteNavItem>
+              </Nav>
         </Navbar>
         <Routes childProps={childProps} />
       </div>
