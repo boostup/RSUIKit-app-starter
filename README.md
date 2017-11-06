@@ -11,8 +11,9 @@ This package is meant as a starter kit for creating react apps for the browser.
 - Webpack, live coding
 - VSCode: integrated app debugging, [thanks to this page, down at the 'Visual Studio Code' section](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
 - Bootstrap for react
-- Routing (Handling not found routes)
+- Routing (Handling "not found" routes)
 - Auto selecting nav item of main nav, according to URL/href
+- Default loading component is now 'skinnable'
 - CSS imports using regular ES6 import statements
 - Passing App-level data or functions to routes' child component (useful for passing user session data for example)
 - [Components are loadable through ES6 'import' statements using 'react-loadable'](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html#nextsteps)
@@ -31,7 +32,7 @@ This package is meant as a starter kit for creating react apps for the browser.
 - CSS preprocessor ? which ? provide the choice ??
 
 
-- is ES6 await/async??
+- ~~is ES6 await/async??~~  YES IT IS!!!
 
 #Useful tools
 - [Defining favicons](https://serverless-stack.com/chapters/add-app-favicons.html)
