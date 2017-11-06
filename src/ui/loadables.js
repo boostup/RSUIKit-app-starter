@@ -15,6 +15,11 @@ const CommonLoadable = function (opts) {
   return Loadable(Object.assign({
     loading: defaultLoadingWithProps({customElement: opts.customElement}),
     timeout: 10,
+    render: (loaded, props) => {
+      //Does nothing special for now, but this could be useful oneday to wrap the 'Component' component...
+      let Component = loaded.default;
+      return <Component {...props}/>;
+    }
   }, opts));
 };
 
