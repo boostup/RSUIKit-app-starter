@@ -2,27 +2,26 @@ import axios from "axios";
 import _ from 'lodash';
 import qs from "qs";
 
-const ROOT_URL = 'https://jsonplaceholder.typicode.com/';
-const API_KEY = ''
-
+const JSON_PL_ROOT_URL = 'https://jsonplaceholder.typicode.com/';
+const JSON_PL_API_KEY = ''
 /**
  * 
- * FETCH LIST OF DUMMY DATA
+ * FETCH LIST OF DUMMY PHOTOS (JSON)
  */
-const ACTION_FETCH_LIST = 'fetch_list';
-const QS_FETCH_LIST = {
+const ACTION_FETCH_PHOTOS = 'fetch_photos';
+const QS_FETCH_PHOTOS = {
     verb: 'photos',
     qs: {
-        key: API_KEY,
+        key: JSON_PL_API_KEY,
     }
 };
-export function fetchList() {
-    const qstr = (qs.stringify(QS_FETCH_LIST.qs));
-    const requestStr = `${ROOT_URL}${QS_FETCH_LIST.verb}?${qstr}`;
+export function fetchPhotos() {
+    const qstr = (qs.stringify(QS_FETCH_PHOTOS.qs));
+    const requestStr = `${JSON_PL_ROOT_URL}${QS_FETCH_PHOTOS.verb}?${qstr}`;
     console.log(requestStr);
     const request = axios.get(requestStr);
     return {
-        type: ACTION_FETCH_LIST,
+        type: ACTION_FETCH_PHOTOS,
         payload: request
     }    
 }
@@ -34,7 +33,7 @@ export function fetchList() {
 export function reducer (state = null, action) {
     switch (action.type) {
 
-        case ACTION_FETCH_LIST:
+        case ACTION_FETCH_PHOTOS:
             return action.payload.data;
             
         default:

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import _ from "lodash";
 import "./Home.css";
-import { fetchList } from "../../redux/demo_api";
+import { fetchPhotos } from "../../redux/demo_api";
 
 class Home extends Component {
 
@@ -10,12 +10,12 @@ class Home extends Component {
     //get dummy data from a json placeholder online service
     //Integrate redux and redux-thunk to allow sync code syntaxe to run async'ly
     // + test await / async in this environment
-    this.props.fetchList();
+    this.props.fetchPhotos();
   }
 
   render() {
 
-    if(!this.props.items) return <div></div>;
+    if(!this.props.photos) return <div>Loading photos...</div>;
 
     return (
       <div className="Home">
@@ -30,21 +30,21 @@ class Home extends Component {
           <h2>Where do they come from?</h2>
           <ul>
             <li>'fetchList' </li>
-            <li>'items': example for data retrieved via HTTP using redux=>action/reducer.</li>
+            <li>'photos': example for data retrieved via HTTP using redux=>action/reducer.</li>
             <li>'isAuthenticated' and 'userHasAuthenticated': examples of how to propagate values or functions
               from the top/root 'App' component to its children.  Have a look at components/AppliedRoute).
             </li>
             <li>'match', 'location', and 'history' come from the react router / routes</li>
           </ul>  
 
-          <h2>Sample data: items</h2>
+          <h2>Sample data: photos</h2>
           <ul>
-          {this.props.items.map(item => {
+          {this.props.photos.map(photo => {
 
             return (
-              <li key={item.id}>
-                {item.title}
-                <img src={item.thumbnailUrl} />
+              <li key={photo.id}>
+                {photo.title}
+                <img src={photo.thumbnailUrl} />
               </li>
             )
           })}
@@ -58,7 +58,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-  return { items: state.demoReducer ? state.demoReducer : '' };
+  return { photos: state.demoReducer ? state.demoReducer : '' };
 }
 
-export default connect(mapStateToProps, { fetchList } )(Home)
+export default connect(mapStateToProps, { fetchPhotos } )(Home)
