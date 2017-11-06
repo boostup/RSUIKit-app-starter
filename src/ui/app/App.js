@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./App.css";
-import Routes from "./Routes";
-import RouteNavItem from "./components/RouteNavItem";
+import Routes from "../../routing/Routes";
+import RouteNavItem from "../routenavitem/RouteNavItem";
 
 class App extends Component {
   render() {

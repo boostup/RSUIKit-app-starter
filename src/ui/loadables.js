@@ -1,9 +1,9 @@
 /**
  * This file is meant to manage all dynamic loading of code at run time.
- * Through the use of the "react-loadable" package, webpack knows how to automatically cut the chunks.
+ * Through the use of the "react-loadable" package, webpack knows how to automatically cut the code into chunks.
  */
 import Loadable from "react-loadable";
-import { DefaultLoadingComponent } from './components/Loading'; 
+import { DefaultLoadingComponent } from './loading/Loading'; 
 
 /**
  * https://github.com/thejameskyle/react-loadable#how-do-i-avoid-repetition
@@ -22,5 +22,5 @@ const CommonLoadable = function CommonLoadable(opts) {
  * HOME COMPONENT
  */
 export const Home = CommonLoadable({
-    loader: () => import("./containers/Home")
+    loader: () => import("./home/Home")
   });
