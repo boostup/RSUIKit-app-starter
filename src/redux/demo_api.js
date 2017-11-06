@@ -1,7 +1,4 @@
 import axios from "axios";
-import _ from 'lodash';
-import qs from "qs";
-
 import { buildURLRequestString } from "./api_utils";
 
 const JSON_PL_ROOT_URL = 'http://localhost:3000/';
@@ -9,6 +6,7 @@ const JSON_PL_API_KEY = ''
 /**
  * 
  * FETCH LIST OF DUMMY PHOTOS (JSON)
+ * from: https://jsonplaceholder.typicode.com/photos
  */
 const ACTION_FETCH_PHOTOS = 'fetch_photos';
 const QS_FETCH_PHOTOS = {
