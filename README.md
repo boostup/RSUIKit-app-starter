@@ -19,6 +19,13 @@ This package is meant as a starter kit for creating react apps for the browser.
 - [Components are loadable through ES6 'import' statements using 'react-loadable'](https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html#nextsteps)
 
 #TODO
+
+ - Integrate router transition animation [using this sandbox I made](https://codesandbox.io/s/2484vxj9qy) and making it reusable by Wrapping <Transition> Components, [see this guide](https://github.com/reactjs/react-transition-group/blob/master/Migration.md#wrapping-transition-components)
+ 
+ - ~~Could not use NavItem from 'react-bootrap' because I prefer the stylesheet for bootstrap v4 than v3.  However, the 'react-bootrap' implement v3 of bootstrap... should I use semantic-UI for React instead ?~~ No, i should stick to the package 'react-bootstrap'.  However, now I have to adapt the 'sample list' items, and the 'selected route' in main nav to reflect bootstrap HTML markup, because the one I have is compatible v4, but not v3...
+ 
+ - Integrate a animation transition or a loader like 'nprogress' by integrating [the code I made in this pen](https://codesandbox.io/s/j7y1576lv) or using [this example from the react-router documentation] (https://reacttraining.com/react-router/web/example/animated-transitions)
+ 
  - Create reusable component SwipeSelect by integrating [the code I made in this pen](https://codepen.io/b00stup/pen/XzXooM?editors=1000)
 
 #Roadmap
