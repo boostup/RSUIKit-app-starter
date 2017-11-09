@@ -21,7 +21,9 @@ This package is meant as a starter kit for creating react apps for the browser.
 #TODO
 
 ##Router transition animation
+
 Look at these 2 solutions, and chose the best; or mix and match them: 
+
  - router transition animation [using this sandbox I made](https://codesandbox.io/s/2484vxj9qy) and making it reusable by Wrapping <Transition> Components, [see this guide](https://github.com/reactjs/react-transition-group/blob/master/Migration.md#wrapping-transition-components)
  - animation transition or a loader like 'nprogress' by integrating [the code I made in this pen](https://codesandbox.io/s/j7y1576lv) or using [this example from the react-router documentation] (https://reacttraining.com/react-router/web/example/animated-transitions)
  
