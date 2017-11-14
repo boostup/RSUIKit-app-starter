@@ -2,9 +2,10 @@
  * This file is meant to manage all dynamic loading of code at run time.
  * Through the use of the "react-loadable" package, webpack knows how to automatically cut the code into chunks.
  */
-import React from "react";
-import Loadable from "react-loadable";
-import { defaultLoadingWithProps } from './LoaderWidget'; 
+import React from "react"
+import Loadable from "react-loadable"
+import { defaultLoadingWithProps } from './LoaderWidget'
+import ElementFader from '../elementfader/ElementFader'
 
 /**
  * https://github.com/thejameskyle/react-loadable#how-do-i-avoid-repetition
@@ -15,10 +16,6 @@ export const LoadableChunk = function (opts) {
   return Loadable(Object.assign({
     loading: defaultLoadingWithProps({customElement: opts.customElement}),
     timeout: 10,
-    render: (loaded, props) => {
-      //Does nothing special for now, but this could be useful oneday to wrap the 'Component' component...
-      let Component = loaded.default;
-      return <Component {...props}/>;
-    }
+    render: (loaded, props) => <ElementFader><loaded.default {...props}/></ElementFader>
   }, opts));
 };
