@@ -24,6 +24,24 @@ This package is meant as a starter kit for creating react apps for the browser.
 
 #Roadmap
 
+##An Almost Static Stack – superhighfives – Medium
+[react tut](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319)
+
+##react-router tut: play with this to understand it
+[Modal Gallery](https://reacttraining.com/react-router/web/example/modal-gallery)
+
+##Create NPM package to host this project
+ - [Working with scoped packages | npm Documentation](https://docs.npmjs.com/getting-started/scoped-packages)
+ - [Semantic versioning and npm | npm Documentation](https://docs.npmjs.com/getting-started/semantic-versioning)
+ - [Publishing npm packages | npm Documentation](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+
+
+##Component Catalog
+Create a catalog of components using Catalog.style
+ - https://docs.catalog.style/installation/module
+ - https://docs.catalog.style/configuration/imports
+ - https://www.catalog.style/try
+
 ##Resuable Component active route indicator
 Auto selecting nav item of main nav, according to URL/href.
 
