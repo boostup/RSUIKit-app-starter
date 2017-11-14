@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Segment } from 'semantic-ui-react'
+
 import "./Home.css";
 import { fetchPhotos } from "../../redux/demo_api";
 import { AvailableProps, PhotosList} from "../loadables";
+
 
 class Home extends Component {
 
@@ -12,12 +15,20 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
+      <Segment className="Home">
         <h1>Home (Sample Component)</h1>
-        <AvailableProps props={this.props}/>
-
-        {this.props.photos && <PhotosList photos={this.props.photos} />}
-      </div>
+        <Segment>
+          <AvailableProps props={this.props}/>
+        </Segment>
+        <Segment>
+          {this.props.photos && <PhotosList photos={this.props.photos} />}
+        </Segment>
+        <Segment>
+          <h1>Home (Sample Component)</h1>
+          <AvailableProps props={this.props}/>
+          {this.props.photos && <PhotosList photos={this.props.photos} />}
+        </Segment>
+      </Segment>
     );
   }
 }

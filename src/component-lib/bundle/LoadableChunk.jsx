@@ -1,6 +1,17 @@
 /**
  * This file is meant to manage all dynamic loading of code at run time.
  * Through the use of the "react-loadable" package, webpack knows how to automatically cut the code into chunks.
+ *
+ * Examples of usage:
+ * LoadableChunk({
+ *   customElement: <div>Loading the home container</div>, //passing a react component
+ *   loader: () => import("./home/Home")
+ * });
+ *
+ * export const PhotosList = LoadableChunk({
+ *   customElement: 'Loading the photos list...',//passing a string
+ *   loader: () => import("./home/photosList")
+ * });
  */
 import React from "react"
 import Loadable from "react-loadable"
@@ -14,7 +25,7 @@ import ElementFader from '../elementfader/ElementFader'
  */
 export const LoadableChunk = function (opts) {
   return Loadable(Object.assign({
-    loading: defaultLoadingWithProps({customElement: opts.customElement}),
+    loading: defaultLoadingWithProps({...opts}),
     timeout: 10,
     render: (loaded, props) => <ElementFader><loaded.default {...props}/></ElementFader>
   }, opts));
