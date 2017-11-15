@@ -2,7 +2,7 @@ import React from "react";
 
 export default (props) => (
     <div>
-        <h2>Props origin {console.log(...props, props)}</h2>
+        <h2>Props origin</h2>
         <ul>
             <li>
                 <b>fetchPhotos:</b> function available through redux <b>connect()</b> mechanism.  

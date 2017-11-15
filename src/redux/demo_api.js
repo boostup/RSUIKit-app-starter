@@ -23,6 +23,24 @@ export function fetchFeed() {
         payload: request
     }    
 }
+/**
+ * FETCH LIST OF MENU ITEM FOR THE MAIN NAV (JSON)
+ */
+// const ACTION_FETCH_MAIN_NAV = 'fetch_feed';
+// const QS_FETCH_MAIN_NAV = {
+//     verb: 'json/mainNav.json',
+//     qs: {
+//         key: JSON_PL_API_KEY,
+//     }
+// };
+// export function fetchMainNav() {
+//     const requestStr = buildURLRequestString(JSON_PL_ROOT_URL, QS_FETCH_MAIN_NAV);
+//     const request = axios.get(requestStr);
+//     return {
+//         type: ACTION_FETCH_MAIN_NAV,
+//         payload: request
+//     }    
+// }
 
 // const YT_API_ROOT_URL = 'https://www.googleapis.com/youtube/v3/';
 // const YT_API_KEY = 'AIzaSyAknG794fyd_5tOqgi1PuyGqepxNSGJO';
@@ -59,6 +77,9 @@ export function reducer (state = null, action) {
     switch (action.type) {
 
         // case ACTION_SEARCH_VIDEOS:
+        //     return action.payload.data;
+
+        // case ACTION_FETCH_MAIN_NAV:
         //     return action.payload.data;
 
         case ACTION_FETCH_FEED:
