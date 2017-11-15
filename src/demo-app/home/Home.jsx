@@ -4,7 +4,8 @@ import { Segment } from 'semantic-ui-react'
 
 import "./Home.css";
 import { fetchPhotos } from "../../redux/demo_api"
-import { AvailableProps, PhotosList} from "../loadables"
+import { PhotosList, Explanation} from "../loadables"
+import AvailableProps from './availableProps'
 
 
 class Home extends Component {
@@ -21,11 +22,9 @@ class Home extends Component {
           <AvailableProps props={this.props}/>
         </Segment>
         <Segment>
-          {this.props.photos && <PhotosList photos={this.props.photos} />}
+          <Explanation />  
         </Segment>
         <Segment>
-          <h1>Home (Sample Component)</h1>
-          <AvailableProps props={this.props}/>
           {this.props.photos && <PhotosList photos={this.props.photos} />}
         </Segment>
       </Segment>
