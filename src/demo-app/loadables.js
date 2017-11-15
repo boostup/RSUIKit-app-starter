@@ -7,7 +7,7 @@ export const Home = LoadableChunk({
 });
 
 export const Feed = LoadableChunk({
-  text: 'Loading the photos list...',
+  text: 'Loading the feed items...',
   loader: () => import("./home/feed")
 });
 
