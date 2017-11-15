@@ -5,21 +5,21 @@ const JSON_PL_ROOT_URL = 'http://192.168.1.16:3000/';
 const JSON_PL_API_KEY = '';
 /**
  * 
- * FETCH LIST OF DUMMY PHOTOS (JSON)
+ * FETCH LIST OF DUMMY FEED (JSON)
  * from: https://jsonplaceholder.typicode.com/photos
  */
-const ACTION_FETCH_PHOTOS = 'fetch_photos';
-const QS_FETCH_PHOTOS = {
-    verb: 'json/photos.json',
+const ACTION_FETCH_FEED = 'fetch_feed';
+const QS_FETCH_FEED = {
+    verb: 'json/feed.json',
     qs: {
         key: JSON_PL_API_KEY,
     }
 };
-export function fetchPhotos() {
-    const requestStr = buildURLRequestString(JSON_PL_ROOT_URL, QS_FETCH_PHOTOS);
+export function fetchFeed() {
+    const requestStr = buildURLRequestString(JSON_PL_ROOT_URL, QS_FETCH_FEED);
     const request = axios.get(requestStr);
     return {
-        type: ACTION_FETCH_PHOTOS,
+        type: ACTION_FETCH_FEED,
         payload: request
     }    
 }
@@ -61,7 +61,7 @@ export function reducer (state = null, action) {
         // case ACTION_SEARCH_VIDEOS:
         //     return action.payload.data;
 
-        case ACTION_FETCH_PHOTOS:
+        case ACTION_FETCH_FEED:
             return action.payload.data;
             
         default:

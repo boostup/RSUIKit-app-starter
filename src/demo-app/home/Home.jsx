@@ -3,15 +3,15 @@ import { connect } from "react-redux"
 import { Segment } from 'semantic-ui-react'
 
 import "./Home.css";
-import { fetchPhotos } from "../../redux/demo_api"
-import { PhotosList, Explanation} from "../loadables"
+import { fetchFeed } from "../../redux/demo_api"
+import { Feed, Explanation} from "../loadables"
 import AvailableProps from './availableProps'
 
 
 class Home extends Component {
 
   componentDidMount() {
-    this.props.fetchPhotos();
+    this.props.fetchFeed();
   }
 
   render() {
@@ -25,7 +25,7 @@ class Home extends Component {
           <Explanation />  
         </Segment>
         <Segment>
-          {this.props.photos && <PhotosList photos={this.props.photos} />}
+          {this.props.feed && <Feed feed={this.props.feed} />}
         </Segment>
       </Segment>
     );
@@ -33,7 +33,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-  return { photos: state.demoReducer ? state.demoReducer : '' };
+  return { feed: state.demoReducer ? state.demoReducer : '' };
 }
 
-export default connect(mapStateToProps, { fetchPhotos } )(Home)
+export default connect(mapStateToProps, { fetchFeed } )(Home)

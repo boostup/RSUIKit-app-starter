@@ -6,9 +6,9 @@ export const Home = LoadableChunk({
   loader: () => import("./home/Home")
 });
 
-export const PhotosList = LoadableChunk({
+export const Feed = LoadableChunk({
   text: 'Loading the photos list...',
-  loader: () => import("./home/photosList")
+  loader: () => import("./home/feed")
 });
 
 export const Explanation = LoadableChunk({
