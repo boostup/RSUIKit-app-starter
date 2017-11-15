@@ -1,0 +1,14 @@
+.logo {
+    width: 30px;
+    position: absolute;
+}
+
+.ui.secondary.pointing.menu {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 0;
+}
+
+.container h1:first-child {
+    margin-top: 2rem;
+}

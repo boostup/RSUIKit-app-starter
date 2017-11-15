@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./App.css";
-import Routes from "../../routing/Routes";
-import RouteNavItem from "../../component-lib/routenavitem/RouteNavItem";
+import React, { Component } from "react"
+import { Container } from 'semantic-ui-react'
+import "./App.css"
+import Routes from "../../routing/Routes"
+import MainNav from './MainNav'
 
 class App extends Component {
   render() {
@@ -13,12 +13,10 @@ class App extends Component {
     };
 
     return (
-      <div className="App container">
-        <Link to="/">Starter App</Link>
-        <RouteNavItem href="/signup">Signup</RouteNavItem>
-        <RouteNavItem href="/login">Login</RouteNavItem>
+      <Container className="App">
+        <MainNav />
         <Routes childProps={childProps} />
-      </div>
+      </Container>
     );
   }
 }
