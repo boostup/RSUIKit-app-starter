@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from "react"
+import { connect } from "react-redux"
 import { Segment } from 'semantic-ui-react'
 
 import "./Home.css";
-import { fetchPhotos } from "../../redux/demo_api";
-import { AvailableProps, PhotosList} from "../loadables";
+import { fetchPhotos } from "../../redux/demo_api"
+import { AvailableProps, PhotosList} from "../loadables"
 
 
 class Home extends Component {
