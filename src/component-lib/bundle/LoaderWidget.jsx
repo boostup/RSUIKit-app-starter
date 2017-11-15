@@ -8,7 +8,7 @@ export function defaultLoadingWithProps(props) {
   return ({isLoading, error}) => {
     // Handle the loading state
     if (isLoading) {
-      return props.customEl || <Dimmer active><Loader>{props.text || 'loading...'}</Loader></Dimmer>;
+      return props.customEl || <Dimmer active inverted><Loader>{props.text || 'loading...'}</Loader></Dimmer>;
     }
     // Handle the error state
     else if (error) {
