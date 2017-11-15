@@ -17,7 +17,7 @@ class Home extends Component {
   render() {
     return (
       <Container className="home">
-        <h1>Home - Sample Component</h1>
+        <h1>Home</h1>
         <Segment>
           <AvailableProps props={this.props}/>
         </Segment>

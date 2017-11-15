@@ -5,13 +5,13 @@ export default (props) => (
         <h2>Props origin</h2>
         <ul>
             <li>
-                <b>fetchPhotos:</b> function available through redux <b>connect()</b> mechanism.  
+                <b>fetchFeed:</b> function available through redux <b>connect()</b> mechanism.  
                 Have a look at the bottom of the <b>Home.jsx</b> component file</li>
             <li>
-                <b>photos:</b> example for data retrieved via HTTP using redux=>action/reducer.</li>
+                <b>feed:</b> example for data retrieved via HTTP using redux=>action/reducer.</li>
             <li>
                 <b>isAuthenticated</b> and <b>userHasAuthenticated:</b> examples of how to propagate values or functions
-                from the top level <b>App</b> component and shared to its child routes thanks to the <b>AppliedRoute</b> 
+                from the top level <b>App</b> component and share them with its child routes thanks to the <b>AppliedRoute</b> 
                 componenent).
             </li>
             <li>
