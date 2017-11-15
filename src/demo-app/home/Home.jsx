@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Segment } from 'semantic-ui-react'
+import { Container, Segment } from 'semantic-ui-react'
 
 import "./Home.css";
 import { fetchFeed } from "../../redux/demo_api"
@@ -16,8 +16,8 @@ class Home extends Component {
 
   render() {
     return (
-      <Segment className="home">
-        <h1>Home (Sample Component)</h1>
+      <Container className="home">
+        <h1>Home - Sample Component</h1>
         <Segment>
           <AvailableProps props={this.props}/>
         </Segment>
@@ -27,7 +27,7 @@ class Home extends Component {
         <Segment>
           {this.props.feed && <Feed feed={this.props.feed} />}
         </Segment>
-      </Segment>
+      </Container>
     );
   }
 }
