@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import ElementFader from '../elementfader/ElementFader'
+import { Visibility } from 'semantic-ui-react'
 
 export default class Image extends Component {
 
-  state = { loaded: false }
+  state = { loaded: false, visibility: false };
 
   onImageLoad = () => {
     this.setState({ loaded: true });
@@ -15,14 +16,21 @@ export default class Image extends Component {
     img.src = this.props.src;
   }
 
+  handleVisible = () => {
+    this.setState({ visibility: true });
+  }
+
   render() {
-    const { props } = this;
-    const { loaded } = this.state;
+    const { props, state } = this;
+    const { loaded, visibility } = state;
+    const renderedProps = visibility === true ? props : {};
 
     return (
-      <ElementFader visible={loaded}>
-        <img {...props} alt="" />
-      </ElementFader>
+      <Visibility onTopVisible={this.handleVisible}>
+        <ElementFader visible={loaded && visibility}>
+          <img {...renderedProps} alt="" />
+        </ElementFader>
+      </Visibility >
     );
   }
 }
