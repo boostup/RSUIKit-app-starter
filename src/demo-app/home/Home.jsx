@@ -19,16 +19,19 @@ class Home extends Component {
   render() {
     const {props} = this;
     const {error} = props.feed;
+    const {startLazyLoading} = this.state;
 
     return (
       <Container className="home" style={{overflowWrap: "break-word"}}>
         <h1>Home</h1>
+        
+        <Segment>
+          <Explanation vars={{startLazyLoading}} />  
+        </Segment>
+
         <Segment>
           <AvailableProps props={{propPath: "this.state", prop: this.state}}/>
           <AvailableProps props={{propPath: "this.props", prop: this.props}}/>
-        </Segment>
-        <Segment>
-          <Explanation />  
         </Segment>
 
         <Visibility onUpdate={this.onVisibilityUpdate}>

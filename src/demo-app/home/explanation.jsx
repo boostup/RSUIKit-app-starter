@@ -1,13 +1,22 @@
 import React from "react";
 
-export default (props) => (
+export default (props) => {
+    
+    console.log(props);
+
+    return(
     <div>
-        <h2>About the props above</h2>
+        <h2>Props</h2>
+        <p>Among others, these are found in the <b>HOME</b> component</p>
         <ul>
             <li>
-                <b>startLazyLoading:</b> this is for performance purposes (Critial Rendering Path)<b>false</b> on first screen render.  
-                As soon as the screen is scrolled, this component state prop will be equal to <b>true</b>,
-                which will trigger the lazy loading of the rest of the page.
+                <b>startLazyLoading:</b> <i>Right now, is it equal to <b>{props.vars.startLazyLoading.toString()}</b></i>.
+                <p>
+                    This is for performance purposes (Critical Rendering Path) and it is set to <b>false</b> on 
+                    first screen render. 
+                    As soon as the screen is scrolled, this component state prop will be equal to <b>true</b>, 
+                    which will trigger the lazy loading of the rest of the page.
+                </p>
             </li>
             <li>
                 <b>fetchFeed:</b> function available through redux <b>connect()</b> mechanism.  
@@ -24,4 +33,4 @@ export default (props) => (
             </li>
         </ul>          
     </div>
-    )
+    )}
