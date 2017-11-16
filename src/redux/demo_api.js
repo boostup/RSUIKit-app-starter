@@ -17,7 +17,7 @@ const QS_FETCH_FEED = {
 };
 export function fetchFeed() {
     const requestStr = buildURLRequestString(JSON_PL_ROOT_URL, QS_FETCH_FEED);
-    const request = axios.get(requestStr);
+    const request = axios.get(requestStr).catch(err => console.warn("Cought Error:", err));
     return {
         type: ACTION_FETCH_FEED,
         payload: request
@@ -74,6 +74,7 @@ export function fetchFeed() {
  * MAIN REDUCER
  */
 export function reducer (state = null, action) {
+
     switch (action.type) {
 
         // case ACTION_SEARCH_VIDEOS:
@@ -83,6 +84,7 @@ export function reducer (state = null, action) {
         //     return action.payload.data;
 
         case ACTION_FETCH_FEED:
+            if (!action.payload) return {error:"The feed could not be retrieved at this time."};
             return action.payload.data;
             
         default:

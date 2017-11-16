@@ -15,6 +15,8 @@ class Home extends Component {
   }
 
   render() {
+    const {error} = this.props.feed;
+
     return (
       <Container className="home">
         <h1>Home</h1>
@@ -25,7 +27,7 @@ class Home extends Component {
           <Explanation />  
         </Segment>
         <Segment>
-          {this.props.feed && <Feed feed={this.props.feed} />}
+          {error ? error : <Feed feed={this.props.feed} />}
         </Segment>
       </Container>
     );
