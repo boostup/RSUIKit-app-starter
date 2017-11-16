@@ -1,5 +1,5 @@
 import React from "react"
-import {default as ImageFader} from "../../component-lib/image/Image"
+import {default as ImageLoader} from "../../component-lib/image/Image"
 import { Item } from 'semantic-ui-react'
 
 export default (props) => {
@@ -9,13 +9,12 @@ export default (props) => {
             <Item.Group unstackable divided>
             {props.feed.map(item => (
                     <div className="item" key={item.childKey}>
-                        <Item.Image size='tiny' content={<ImageFader src={item.image}/>} />
+                        <Item.Image size='tiny' content={<ImageLoader src={item.image}/>} />
                         <Item.Content>
                             <Item.Header as='a'>{item.header}</Item.Header>
                             <Item.Description>
                                 {item.description}   
                             </Item.Description>
-                            
                         </Item.Content>
                     </div>                    
             ))}
