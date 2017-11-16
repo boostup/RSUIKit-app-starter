@@ -9,7 +9,7 @@ class App extends Component {
 
     const childProps = {
       isAuthenticated: true,
-      userHasAuthenticated: ()=>{}
+      userHasAuthenticated: ()=>alert("you clicked on userHasAuthenticated!")
     };
 
     return (
