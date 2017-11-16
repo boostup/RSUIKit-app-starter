@@ -18,5 +18,5 @@ export const Explanation = LoadableChunk({
 
 export const AvailableProps = LoadableChunk({
   text: 'Loading the available props component...',
-  loader: () => import("./home/availableProps")
+  loader: () => import("../component-lib/availableprops/AvailableProps")
 });
