@@ -48,15 +48,9 @@ Look at these 2 solutions, and chose the best; or mix and match them:
  - animation transition or a loader like 'nprogress' by integrating [the code I made in this pen](https://codesandbox.io/s/j7y1576lv) or using [this example from the react-router documentation] (https://reacttraining.com/react-router/web/example/animated-transitions)
 
 ##Reusable Component PullToRefresh
-It should be combinable with any react.Component and augment it or give it access to the functions or components to wire up the pull to refresh to any list of items.
-
 ##Reusable Component InfiniteScroll
-Implement infinite-scroll for the "PL management" & the "PL details" screens:
-
- - 18 examples: https://react.rocks/tag/InfiniteScroll
- - google search: https://www.google.fr/search?q=React+scroll-to-load-more&oq=React+scroll-to-load-more&aqs=chrome..69i57j0.3078j0j4&sourceid=chrome&ie=UTF-8
- - Material UI infinite scroll: https://github.com/callemall/material-ui/issues/1511
-
+Implement infinite-scroll & PullToRefresh with https://www.npmjs.com/package/react-infinite-scroll-component
+ 
 ##Reusable App-wide top bar
 It should not scroll with page and stay fixed at the top.
 Must have a back button
