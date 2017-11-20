@@ -18,7 +18,9 @@
     "semantic-ui-react": "^0.76.0"
   },
   "scripts": {
-    "analyse": "source-map-explorer build/static/js/main.*",
+    "postinstall": "echo 'installing documentation for this project' && cd docs/ && npm install",
+    "start-doc": "cd docs/ && npm run catalog-start",    
+    "analyse": "source-map-explorer build/static/js/main.*",    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
