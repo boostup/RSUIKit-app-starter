@@ -1,5 +1,5 @@
 import React from "react"
-import {default as ImageLoader} from "../../component-lib/image/Image"
+import { ImageLoader } from "@source360/react-semantic-ui-kit"
 import { Item } from 'semantic-ui-react'
 
 export default (props) => {

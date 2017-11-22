@@ -1,10 +1,6 @@
 import React from "react";
 
-export default (props) => {
-    
-    console.log(props);
-
-    return(
+export default (props) => (
     <div>
         <h2>Props</h2>
         <p>Among others, these are found in the <b>HOME</b> component</p>
@@ -33,4 +29,4 @@ export default (props) => {
             </li>
         </ul>          
     </div>
-    )}
+)
