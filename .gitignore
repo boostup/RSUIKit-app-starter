@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/docs/node_modules
+/catalog/node_modules
 
 # testing
 /coverage

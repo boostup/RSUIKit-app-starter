@@ -13,10 +13,9 @@ git clone https://github.com/boostup/RSUIKit-app-starter.git && npm install
 
 ## Documentation
 
-Starting the documentation
-```bash {cmd=true}
-npm run start-doc
-```
+[The official RSUIKit App Starter is here.](https://boostup.github.io/RSUIKit-app-starter/#/)
+
+[The official RSUIKit documentation is here.](https://boostup.github.io/react-semantic-ui-kit/#/)
 
 
 ## Contributing

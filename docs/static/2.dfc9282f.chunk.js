@@ -1,0 +1,2 @@
+webpackJsonp([2],{588:function(t,n,e){var o=e(6),r=e(32),a=e(136).PageRenderer;a.__esModule&&(a=a.default);var c=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:e(593)}},componentWillMount:function(){},render:function(){return o.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,t.exports=c},593:function(t,n){t.exports="```code\ngit clone https://github.com/boostup/RSUIKit-app-starter.git\n```\n\n### Usage\n\n```react\n<UnderConstruction />\n```"}});
+//# sourceMappingURL=2.dfc9282f.chunk.js.map

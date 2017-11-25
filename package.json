@@ -6,8 +6,8 @@
     "axios": "^0.17.0",
     "lodash": "^4.17.4",
     "qs": "^6.5.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-json-view": "^1.13.3",
     "react-loadable": "^5.3.1",
     "react-redux": "^5.0.6",
@@ -17,13 +17,13 @@
     "redux-promise": "^0.5.3",
     "semantic-ui-react": "^0.76.0"
   },
-  "scripts": { 
-    "analyse": "source-map-explorer build/static/js/main.*",    
+  "scripts": {
+    "analyse": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "catalog-start": "catalog start",
-    "catalog-build": "catalog build --u https://boostup.github.io/react-semantic-ui-kit/ --o ./docs"    
+    "catalog-start": "cd ./catalog && catalog start",
+    "catalog-build": "cd ./catalog && catalog build --u https://boostup.github.io/RSUIKit-app-starter/ --o ../docs"
   }
 }

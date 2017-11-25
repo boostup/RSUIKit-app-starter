@@ -1,0 +1,1 @@
+for some reason, catalog wont work with the versions of packages of the start-app packages listed in its package.json.  So, keeping catalog under catalog/catalog allows me to get both working together.
