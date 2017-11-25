@@ -17,13 +17,13 @@
     "redux-promise": "^0.5.3",
     "semantic-ui-react": "^0.76.0"
   },
-  "scripts": {
-    "postinstall": "echo 'installing documentation for this project' && cd docs/ && npm install",
-    "start-doc": "cd docs/ && npm run catalog-start",    
+  "scripts": { 
     "analyse": "source-map-explorer build/static/js/main.*",    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "catalog-start": "catalog start",
+    "catalog-build": "catalog build --u https://boostup.github.io/react-semantic-ui-kit/ --o ./docs"    
   }
 }
