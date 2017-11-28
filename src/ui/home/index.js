@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Container, Segment, Visibility } from 'semantic-ui-react'
 
-import "./Home.css";
+import "./index.css";
 import { fetchFeed } from "../../redux/starterAppAPI"
 import { Feed, Explanation} from "../loadables"
 import AvailableProps from '../../component-lib/availableprops/AvailableProps'

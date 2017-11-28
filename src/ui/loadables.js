@@ -3,7 +3,7 @@ import { LoadableChunk } from '../component-lib/bundle/LoadableChunk'
 
 export const Home = LoadableChunk({
   customEl: <div>Loading the home container</div>,
-  loader: () => import("./home/Home")
+  loader: () => import("./home/")
 });
 
 export const Feed = LoadableChunk({

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Container } from 'semantic-ui-react'
-import "./App.css"
+import "./index.css"
 import Routes from "../../routing/Routes"
 import MainNav from './MainNav'
 
