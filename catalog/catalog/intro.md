@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Features
 
-These are the features of the demo site.
+These are the features of the starter app.
 
 - [Webpack](https://webpack.github.io/docs/)
 - Live reload of code (CSS/JS/JSX)

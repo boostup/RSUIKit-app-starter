@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "../demo-app/home/Home";
+import Home from "../ui/home/Home";
 
-import NotFound from "../demo-app/notfound/NotFound";
+import NotFound from "../ui/notfound/NotFound";
 import AppliedRoute from "./appliedroute/AppliedRoute";
 
 export default ({ childProps }) =>

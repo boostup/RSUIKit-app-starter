@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { reducer as DemoReducer } from './demo_api'
+import { reducer as StarterAppReducer } from './starterAppAPI'
 
 const rootReducer = combineReducers({
-   demoReducer: DemoReducer,
+   starterAppReducer: StarterAppReducer,
 });
 
 export default rootReducer;
