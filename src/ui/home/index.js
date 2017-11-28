@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 import { Container, Segment, Visibility } from 'semantic-ui-react'
 
 import "./index.css";
-import { fetchFeed } from "../../redux/starterAppAPI"
+import { fetchFeed } from "../../redux/appStarterAPI"
 import { Feed, Explanation} from "../loadables"
 import AvailableProps from '../../component-lib/availableprops/AvailableProps'
 
@@ -49,7 +49,7 @@ class Home extends Component {
 }
 
 function mapStateToProps(state) {
-  return { feed: state.starterAppReducer ? state.starterAppReducer : '' };
+  return { feed: state.appStarterReducer ? state.appStarterReducer : '' };
 }
 
 export default connect(mapStateToProps, { fetchFeed } )(Home)

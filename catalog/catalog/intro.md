@@ -1,4 +1,4 @@
-The starter app includes the **'RSUIKit (React Semantic UI Kit)'** npm package, a bunch of useful and a set of [features](#features) which help put real working apps together with performance in mind, really quickly.
+The app starter includes the **'RSUIKit (React Semantic UI Kit)'** npm package, a bunch of useful and a set of [features](#features) which help put real working apps together with performance in mind, really quickly.
 
 With this boilerplate, one can concentrate on the [CRP](https://varvy.com/pagespeed/critical-render-path.html) ([Critical Rendering Path](https://www.airpair.com/javascript/posts/the-tipping-point-of-clientside-performance)) since chunks can be loaded thanks to the **'react-loadable'** package, also included.
 
@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Features
 
-These are the features of the starter app.
+These are the features of the app starter.
 
 - [Webpack](https://webpack.github.io/docs/)
 - Live reload of code (CSS/JS/JSX)

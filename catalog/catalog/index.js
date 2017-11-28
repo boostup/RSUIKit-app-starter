@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import { Catalog, pageLoader } from "catalog"
 import UnderConstruction from './UnderConstruction'
 
-const catalogTitle = "RSUIKit Starter App";
+const catalogTitle = "RSUIKit App Starter";
 const markdownLoader = page => pageLoader(() => import(`./${page}.md`));
 const jsxLoader = page => pageLoader(() => import(`./${page}.jsx`));
 

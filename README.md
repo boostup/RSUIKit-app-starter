@@ -3,6 +3,7 @@
 ## Good to know
  - [Full stack Tutorial React + AWS Platform = awesome](https://serverless-stack.com/chapters/create-a-new-reactjs-app.html)
  - This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).  Guide available [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+ - [An introducion to this app starter is found here.](https://boostup.github.io/RSUIKit-app-starter/)
  - This project includes the [RSUIKit(React Semantic UI Kit)](https://github.com/boostup/react-semantic-ui-kit) package
 
 ## Installation
