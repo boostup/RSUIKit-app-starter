@@ -4,8 +4,8 @@ import { Container, Segment, Visibility } from 'semantic-ui-react'
 
 import "./index.css";
 import { fetchFeed } from "../../redux/appStarterAPI"
-import { Feed, Explanation} from "../loadables"
-import AvailableProps from '../../component-lib/availableprops/AvailableProps'
+import { Feed, Explanation } from "../loadables"
+import { AvailableProps } from "@source360/react-semantic-ui-kit"
 
 
 class Home extends Component {
@@ -30,8 +30,8 @@ class Home extends Component {
         </Segment>
 
         <Segment>
-          <AvailableProps props={{propPath: "this.state", prop: this.state}}/>
-          <AvailableProps props={{propPath: "this.props", prop: this.props}}/>
+          <AvailableProps data={{propPath: "this.state", prop: this.state}}/>
+          <AvailableProps data={{propPath: "this.props", prop: this.props}}/>
         </Segment>
 
         <Visibility onUpdate={this.onVisibilityUpdate}>
