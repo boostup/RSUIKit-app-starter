@@ -16,7 +16,7 @@
 import React from "react"
 import Loadable from "react-loadable"
 import { defaultLoadingWithProps } from './LoaderWidget'
-import ElementFader from '../elementfader/ElementFader'
+import { ElementFader } from "@source360/react-semantic-ui-kit"
 
 /**
  * https://github.com/thejameskyle/react-loadable#how-do-i-avoid-repetition
@@ -27,6 +27,6 @@ export const LoadableChunk = function (opts) {
   return Loadable(Object.assign({
     loading: defaultLoadingWithProps({...opts}),
     timeout: 10,
-    render: (loaded, props) => <ElementFader><loaded.default {...props}/></ElementFader>
+    render: (loaded, props) => <ElementFader {...opts}><loaded.default {...props}/></ElementFader>
   }, opts));
 };
